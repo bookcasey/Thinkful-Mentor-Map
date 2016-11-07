@@ -1,1 +1,1 @@
-export const API_URL = 'https://www.thinkful.com/api/mentors'
+export const API_URL = 'https://crossorigin.me/https://www.thinkful.com/api/mentors'
