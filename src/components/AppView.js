@@ -16,7 +16,6 @@ const AppView = ({ loading }) => {
           <Map />
         </div>
       }
-      {/* <Mentor /> */}
     </div>
   )
 }

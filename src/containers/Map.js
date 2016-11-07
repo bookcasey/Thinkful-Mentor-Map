@@ -15,7 +15,8 @@ const markers = [
     first_name: 'Ray',
     last_name: 'Smith',
     showInfo: true,
-    slack_handle: 'rsmith'
+    slack_handle: 'rsmith',
+    bio: 'Hi, my name is Ray & I am a full stack JavaScript mentor at thinkful.'
   }
 ];
 
