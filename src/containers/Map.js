@@ -35,6 +35,8 @@ class Map extends Component {
           showInfo: false,
         }
       }
+
+      return marker
     });
   }
 

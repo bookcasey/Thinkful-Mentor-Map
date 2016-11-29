@@ -1,5 +1,4 @@
-import fetch from 'isomorphic-fetch'
-import  { API_URL } from './../config'
+import $ from "jquery"
 
 export const RECIEVE_MENTORS = 'RECIEVE_MENTORS'
 export const REQUEST_MENTORS = 'REQUEST_MENTORS'
@@ -21,9 +20,9 @@ const recieveMentors = (mentors) => {
 export const fetchMentors = () => {
   return dispatch => {
     dispatch(requestMentors())
-    return fetch(API_URL)
-      .then(response => response.json())
-      .then(data => dispatch(recieveMentors(data.mentors)))
+    return $.getJSON("https://www.thinkful.com/api/mentors",(json) => {
+      dispatch(recieveMentors(json.mentors))
+    });
   }
 }
 

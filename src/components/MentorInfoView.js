@@ -1,5 +1,5 @@
 import React from 'react'
-import {Card, CardHeader, CardTitle, CardText} from 'material-ui/Card'
+import {Card, CardHeader, CardText} from 'material-ui/Card'
 
 const MentorInfoView = ({ first_name, image_url, slack_handle, last_name, bio }) => (
   <Card>
