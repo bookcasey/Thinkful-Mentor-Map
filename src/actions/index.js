@@ -20,9 +20,9 @@ const recieveMentors = (mentors) => {
 export const fetchMentors = () => {
   return dispatch => {
     dispatch(requestMentors())
-    return $.getJSON("https://www.thinkful.com/api/mentors",(json) => {
-      dispatch(recieveMentors(json.mentors))
-    });
+    return $.getJSON("https://www.thinkful.com/api/mentors", json =>
+      console.log(json)
+    )
   }
 }
 
